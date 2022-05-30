@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul >
+                <li ><a class="active" href="/">Display Users</a></li>
+                <li ><a href="/users">Input Users</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+              <% if (nameList.length > 0) { %>
+            <div class="grid">
+                <% for (let name of nameList) { %>
+                            <h1><%= name %></h1>
+                <% } %>
+            </div>
+        <% } else { %>
+            <h1>No Products Found!</h1>
+        <% } %>
+    </main>
+</body>
+
+</html>
